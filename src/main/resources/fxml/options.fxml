@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml">
+    <Button fx:id="backButton" text="Back" layoutX="100" layoutY="400" prefWidth="200"/>
+    <Label text="Select Background Color:" layoutX="100" layoutY="50"/>
+    <ComboBox fx:id="colorComboBox" layoutX="100" layoutY="100" prefWidth="200"/>
+</AnchorPane>
+

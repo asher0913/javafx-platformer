@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml">
+    <Label text="Game Info" layoutX="100" layoutY="50" style="-fx-font-size: 24px;"/>
+    <Label text="Controls:" layoutX="100" layoutY="100" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Use the A key to move left, the D key to move right, the W key to jump, and the S key to crouch." layoutX="120" layoutY="130"/>
+    <Label text="You can jump onto platforms, but falling off will result in death." layoutX="120" layoutY="160"/>
+
+    <Label text="Levels:" layoutX="100" layoutY="200" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="There are four levels in total, with increasing difficulty." layoutX="120" layoutY="230"/>
+    <Label text="Each level has a 30-second time limit. You can press pause button to pause the countdown time." layoutX="120" layoutY="260"/>
+    <Label text="Failing to finish within the time limit results in death." layoutX="120" layoutY="280"/>
+    <Label text="Reach the flag at the far right to successfully complete the level." layoutX="120" layoutY="300"/>
+
+    <Label text="Health:" layoutX="100" layoutY="340" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Players start with 100 health points. Colliding with green spikes" layoutX="120" layoutY="370"/>
+    <Label text="or bullets fired by monsters reduces health by 20 points." layoutX="120" layoutY="390"/>
+    <Label text="Interacting with red heart items restores 10 health points." layoutX="120" layoutY="410"/>
+
+    <Label text="Score:" layoutX="100" layoutY="450" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Players start with 50 points. Collecting coins adds 10 points." layoutX="120" layoutY="480"/>
+    <Label text="The maximum score for each level is 100 points." layoutX="120" layoutY="500"/>
+
+    <Button fx:id="backButton" text="Back" layoutX="100" layoutY="550" prefWidth="200"/>
+</AnchorPane>

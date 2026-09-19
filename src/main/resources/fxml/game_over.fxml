@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <Text text="Game Over" style="-fx-font-size: 24px;"/>
+    <Button text="Restart" fx:id="restartButton"/>
+    <Button text="Exit" fx:id="exitButton"/>
+</VBox>
