@@ -231,14 +231,18 @@ public class GameModel {
         return playerHealth -= decrement;
     }
 
+    /** Health a player starts with and can never exceed. */
+    public static final int MAX_HEALTH = 100;
+
     /**
-     * Increases the player's health by the specified amount.
+     * Increases the player's health by the specified amount, up to {@link #MAX_HEALTH}.
      *
      * @param increment the amount of health to add
      * @return the updated player's health value
      */
     public int increaseHealth(int increment) {
-        return playerHealth += increment;
+        playerHealth = Math.min(MAX_HEALTH, playerHealth + increment);
+        return playerHealth;
     }
 
     /**

@@ -17,9 +17,7 @@ public class LevelCompleteViewTest {
         // Initialize the JavaFX runtime before running any tests.
         // A CountDownLatch is used to ensure synchronization,
         // waiting until the JavaFX runtime is fully initialized.
-        CountDownLatch latch = new CountDownLatch(1);
-        Platform.startup(latch::countDown); // Start JavaFX runtime
-        latch.await(5, TimeUnit.SECONDS);   // Wait for up to 5 seconds
+        io.github.asher0913.platformer.FxRuntime.start();
     }
 
     @Test
